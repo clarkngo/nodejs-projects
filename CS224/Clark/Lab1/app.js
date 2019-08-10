@@ -11,9 +11,10 @@ const server = http.createServer((req, res) => {
   else if (req.url === '/') content = '<h1>This is the HOME page</h1>';
   else content = '<h2>404 Page is not found.</h2>';
   let visitor_ip = req.connection.remoteAddress
+  console.log(`${visitor_ip}`)
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.end(content, visitor_ip);
+  res.end(content);
 });
 
-server.listen(port,hostname, () => console.log(`Visitor's IP address is ${visitor_ip}`));
+server.listen(port,hostname, () => console.log(`Visitor's IP address is `));

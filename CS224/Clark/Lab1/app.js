@@ -5,7 +5,6 @@ const port = 4000;
 const hostname = 'localhost';
 
 const server = http.createServer((req, res) => {
-  let visitor_ip = req.connection.remoteAddress;
   let content;
   if (req.url === '/about') content = '<h3>This is the ABOUT page.</h3>';
   else if (req.url === '/address') content = '<h2>This is my address page</h2>';
@@ -16,4 +15,4 @@ const server = http.createServer((req, res) => {
   res.end(content);
 });
 
-server.listen(port,hostname, () => console.log(`Visitor's IP address is ${visitor_ip}`));
+server.listen(port,hostname, () => console.log(`Visitor's IP address is ${req.connection.remoteAddress}`));

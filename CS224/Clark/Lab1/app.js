@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
   else content = '<h2>404 Page is not found.</h2>';
   let ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
   if (ip) content += '\n' + ip;
-
+  console.log(ip);
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.end(content);

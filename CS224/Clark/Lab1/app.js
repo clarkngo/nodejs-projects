@@ -2,7 +2,7 @@
 const http = require('http');
 
 const port = 4000;
-const hostname = 'localhost';
+// const hostname = 'localhost';
 
 const server = http.createServer((req, res) => {
   let content;
@@ -18,4 +18,4 @@ const server = http.createServer((req, res) => {
   res.end(content);
 });
 
-server.listen(port,hostname, () => console.log(`Server is running at http://${hostname}:${port}`));
+server.listen(port, () => console.log(`Server is running at ${port}`));

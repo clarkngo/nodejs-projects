@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   else if (req.url === '/address') content = '<h2>This is my address page</h2>';
   else if (req.url === '/') content = '<h1>This is the HOME page</h1>';
   else content = '<h2>404 Page is not found.</h2>';
-  let ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
+  let ip = req.connection.remoteAddress;
   if (ip) content += '\n' + ip;
   console.log(ip);
   res.statusCode = 200;

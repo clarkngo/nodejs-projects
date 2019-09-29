@@ -50,7 +50,7 @@ var schema = new mongoose_1.default.Schema({
 var User = mongoose_1.default.model('User', schema);
 // Create a new user in the database
 exports.createUser = function (username, password, email, age) {
-    new User({ username: username, password: password, age: age, email: email }).save();
+    new User({ username: username, password: password, email: email, age: age }).save();
 };
 // Find a user based on the username
 exports.findUser = function (username) { return __awaiter(_this, void 0, void 0, function () {

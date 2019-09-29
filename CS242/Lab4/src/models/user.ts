@@ -19,7 +19,7 @@ const User = mongoose.model<UserModel>('User', schema);
 
 // Create a new user in the database
 export const createUser = (username: string, password: string, email: string, age: number ) => {
-  new User({ username, password, age, email }).save();
+  new User({ username, password, email, age }).save();
 };
 
 // Find a user based on the username

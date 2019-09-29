@@ -70,8 +70,16 @@ server.listen(port, () => console.log(`Server is running at http://localhost:${p
 ```
 - `server.listen` starts the HTTP server listening for connections or requests
 
-# References
+# Documentation
 - https://nodejs.org/api/http.html
 - https://nodejs.org/api/http.html#http_class_http_incomingmessage
 - https://nodejs.org/api/http.html#http_request_setheader_name_value
 - https://s3.amazonaws.com/smhelpcenter/smhelp940/classic/Content/programming/javascript/reference/javascript_object_header.htm
+
+# Article
+- https://www.freecodecamp.org/news/cjn-understanding-hello-world-in-nodejs/
+
+# Videos
+- https://youtu.be/lmBXru00meo?list=PLK4sJSsw4V-f3tfHHrxBuCoJv2nWDNqIf
+- https://youtu.be/y7V4_CgTQ8U?list=PLK4sJSsw4V-f3tfHHrxBuCoJv2nWDNqIf
+- https://youtu.be/792o_PdSV-w?list=PLK4sJSsw4V-f3tfHHrxBuCoJv2nWDNqIf

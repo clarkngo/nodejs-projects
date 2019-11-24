@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-weather-app",
+  "version": "1.0.0",
+  "description": "Building a simple weather application using node.js",
+  "keywords": [
+    "weather",
+    "node",
+    "javascript",
+    "api"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkngo/nodejs-projects/weather-app.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/clarkngo/nodejs-projects/weather-app/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clark Jason Ngo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "request": "^2.88.0",
+    "yargs": "^15.0.2"
+  }
+}
